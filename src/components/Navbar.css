@@ -1,0 +1,125 @@
+:root {
+    --text-color: #f0f4f5;
+    --background-color: #263343;
+    --accent-color: #d49466;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263343;
+    padding: 8px 12px;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-menu li {
+    padding: 8px 12px;
+}
+
+.nav-menu li:hover {
+    background-color: #d49466;
+    border-radius: 4px;
+}
+
+.nav-icons {
+    list-style: none;
+    color: var(--text-color);
+    display: flex;
+    padding-left: 0;
+}
+
+.nav-icons li {
+    padding: 8px 12px;
+}
+
+.menu-icon {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: #d49466;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: var(--text-color);
+        color: #242424;
+        border-radius: 0;
+    }
+
+    .nav-icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+
+    .nav-menu-active {
+        text-align: center;
+        list-style: none;
+        width: 100%;
+    }
+    .nav-icons-active {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-align: center;
+        margin-left: 200px;
+    }
+    
+
+   .fa-times {
+       color: var(--text-color);
+       font-size: 2rem;
+   }
+
+
+
+
+}
